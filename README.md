@@ -25,6 +25,7 @@ Current version of script will write only registers to device with unit ID 1.
 
 <a href="https://github.com/akiUp/modbus_brutforce"><img src="https://github.com/akiUp/modbus_bruteforce/blob/master/AkiWrite Coils.PNG" title="Bruteforce script" alt="writecoil"></a>
 - Example of writing to Holding register
+
 <a href="https://github.com/akiUp/modbus_brutforce"><img src="https://github.com/akiUp/modbus_bruteforce/blob/master/AkiWrite Holding.PNG" title="Bruteforce script" alt="writeHold"></a>
 ## Installation
 Script uses pyModbusTCP and argaprse libraries
