@@ -10,12 +10,16 @@ nmap -p 502 your_subnet
 ## AkiScan.py
 Reckon script to run exhaustive scan on specified modbus registers range and find valid ones with current values.
 
+> Important! The Modbus adressing has so-called 0-starting and 1-starting scheme. This scirpt assume the use of 0-starting scheme. I you observe register addresses shifted by 1 it means device uses 1-starting scheme.
+
 Current version of script will scan only registers from device with unit ID 1.
 
 <a href="https://github.com/akiUp/modbus_brutforce"><img src="https://github.com/akiUp/modbus_bruteforce/blob/master/AkiScan.PNG" title="Bruteforce script" alt="Read"></a>
 
 ## AkiWrite.py 
 Will write specified value in selected register
+
+> Important! The Modbus adressing has so-called 0-starting and 1-starting scheme. This scirpt assume the use of 0-starting scheme. I you observe register addresses shifted by 1 it means device uses 1-starting scheme.
 
 Current version of script will write only registers to device with unit ID 1.
 ### The output of this script could be very INVASIVE to the controlled process!!!
