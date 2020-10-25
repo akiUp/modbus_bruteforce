@@ -16,6 +16,29 @@ Current version of script will scan only registers from device with unit ID 1.
 
 <a href="https://github.com/akiUp/modbus_brutforce"><img src="https://github.com/akiUp/modbus_bruteforce/blob/master/AkiScan.PNG" title="Bruteforce script" alt="Read"></a>
 
+## AkiMon.py
+Continiously monitor selected register value
+
+> Important! The Modbus addressing has so-called 0-starting and 1-starting scheme. This script assume the use of 0-starting scheme. If you observe register addresses shifted by 1, it mean device uses 1-starting scheme.
+
+Current version of script will scan only registers from device with unit ID 1.
+
+<a href="https://github.com/akiUp/modbus_brutforce"><img src="https://github.com/akiUp/modbus_bruteforce/blob/master/AkiMon.PNG" title="Monitor script" alt="Monitor"></a>
+
+```shell
+python3 AkiMon.py -h
+usage: AkiMon.py [-h] -i IP -r REG -a ADDR -d DELAY
+
+Pass the input IP Address
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -i IP, --ip IP        Target IP Address
+  -r REG, --reg REG     Specify register type - C Coil, - H Holding, -I Input, -D Discrete
+  -a ADDR, --addr ADDR  Specify register address to end search
+  -d DELAY, --delay DELAY Specify delay in seconds
+```
+
 ## AkiWrite.py 
 Will write specified value in selected register
 
